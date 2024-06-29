@@ -1,0 +1,459 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: "Reem Kufi", sans-serif !important;
+   border: none;
+   outline: none;
+}
+
+html, body {
+   width: 100%;
+   height: 100%;
+   background-color: #f6f6f6;
+}
+
+a {
+   color: #4c4c4c;
+   text-decoration: none;
+   margin-right: 20px;
+}
+
+::-webkit-scrollbar {
+   display: none;
+}
+
+.App {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+}
+
+/* All headings are bold */
+h1, h2, h3, h4, h5, h6 {
+   font-weight: bold;
+}
+
+.content {
+   flex: 1;
+}
+
+.navbar-nav { 
+   margin-left: auto; 
+}
+
+.home-container {
+   display: flex;
+   flex-direction: column;
+}
+
+.home-banner-container {
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 50px;
+   background-color: #f6f6f6;
+}
+
+.home-bannerImage-container img {
+   width: 100%;
+   height: auto;
+}
+
+.home-text-section {
+   max-width: 600px;
+}
+
+.primary-heading {
+   font-size: 2.5rem;
+   color: #4c4c4c;
+   margin-bottom: 20px;
+}
+
+.secondary-button {
+   display: flex;
+   align-items: center;
+   padding: 10px 20px;
+   background-color: #f76c6c;
+   color: #f6f6f6;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.secondary-button svg {
+   margin-left: 10px;
+}
+
+.home-image-section img {
+   max-width: 400px;
+   height: auto;
+}
+
+.primary-heading {
+   margin-left: 10px;
+   font-size: clamp(2rem, 5vw, 4rem);
+   color: #4c4c4c;
+   max-width: 600px;
+   margin-bottom: 30px;
+   margin-top: 0px; /* Adjust this value as needed */
+}
+
+.m-2 {
+   background-color: #fe9e0d;
+   border-color: #000000;
+   color: white;
+   padding: 10px 20px;
+   font-size: 1rem;
+   border-radius: 15px;
+   margin-left: 70px;
+   transition: background-color 0.3s ease;
+}
+
+.m-2:hover {
+   background-color: #fe9e0d;
+   border-color: #8f8f8f;
+}
+
+.m-3 {
+   background-color: #fe9e0d;
+   border-color: #000000;
+   color: white;
+   padding: 10px 20px;
+   font-size: 1rem;
+   border-radius: 15px;
+   transition: background-color 0.3s ease;
+}
+
+.m-3:hover {
+   background-color: #fe9e0d;
+   border-color: #8f8f8f;
+}
+
+.Pets-heading {
+   text-align: center;
+   font-size: 60px;
+   margin-top: 50px;
+}
+
+.card-deck {
+   display: flex;
+   gap: 6rem;
+   margin-left: 150px;
+   margin-top: 30px;
+}
+
+.card {
+   width: 20rem;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   border-radius: 25px;
+}
+
+.card .card-img-top {
+   width: 100%;
+   height: auto;
+}
+
+.card-title {
+   text-align: center;
+   color: #fe9e0d;
+   font-size: 40px;
+}
+
+.card-text {
+   text-align: center;
+}
+
+.card .btn.next-btn {
+   background-color: #fe9e0d;
+   border-color: #ffffff;
+   color: white;
+   padding: 10px 20px;
+   font-size: 1rem;
+   border-radius: 15px;
+   margin-left: 70px;
+   transition: background-color 0.3s ease;
+}
+
+.card .btn.next-btn
+{
+   background-color: #fe9e0d;
+   border-color: #3e3f3f;
+}
+
+.carousel-item img {
+   height: 400px;
+   object-fit: cover;
+}
+
+.paw-container {
+   transform: rotate(230deg);
+   left: 1099px;
+   top: 0;
+   pointer-events: none;
+}
+
+.pad {
+   width: 12px;
+   height: 13px;
+   background-color: #654321;
+   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+   display: block;
+   position: absolute;
+}
+
+.large {
+   width: 35px;
+   height: 40px;
+   transform: rotate(80deg);
+   left: 50px;
+   top: 25px;
+}
+
+.small-1 {
+   transform: rotate(50deg);
+   left: 72px;
+   top: 14px;
+}
+
+.small-2 {
+   transform: rotate(65deg);
+   left: 87px;
+   top: 25px;
+}
+
+.small-3 {
+   transform: rotate(98deg);
+   left: 89px;
+   top: 43px;
+}
+
+.small-4 {
+   transform: rotate(140deg);
+   left: 79px;
+   top: 58px;
+}
+
+.paw-print-1 {
+   opacity: 0;
+   position: absolute;
+   left: 75px;
+   top: 100px;
+   transform: rotate(10deg);
+   animation: walk 3s linear infinite 0.25s;
+}
+
+.paw-print-2 {
+   opacity: 0;
+   position: absolute;
+   left: 175px;
+   top: 20px;
+   transform: rotate(10deg);
+   animation: walk 3s linear infinite 0.5s;
+}
+
+.paw-print-3 {
+   opacity: 0;
+   position: absolute;
+   left: 275px;
+   top: 60px;
+   transform: rotate(20deg);
+   animation: walk 3s linear infinite 0.75s;
+}
+
+.paw-print-4 {
+   opacity: 0;
+   position: absolute;
+   left: 375px;
+   top: 1px;
+   transform: rotate(10deg);
+   animation: walk 3s linear infinite 1s;
+}
+
+.paw-print-5 {
+   opacity: 0;
+   position: absolute;
+   top: 20px;
+   transform: rotate(20deg);
+   animation: walk 3s linear infinite;
+}
+
+@keyframes walk {
+   25% {
+       opacity: 1;
+   }
+   100% {
+       opacity: 0;
+   }
+}
+
+.first-container {
+   background-image:  
+     url("./components/assets/home-banner-background.png"), 
+     url("./components/assets/frab.png"),
+     linear-gradient(to right, rgb(255 255 255 / 100%), rgb(255 255 255 / 0%));
+   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat; 
+   background-position: 
+     top right,
+     left  bottom, 
+     center center;
+   background-size: 
+     520px, 
+     1200px,
+     cover; 
+ }
+
+.first-container, .second-container, .third-container, .fourth-container, .fifth-container{
+   width: 100%;
+   min-height: 100vh; 
+}
+
+.content-home {
+   position: absolute;
+   top: 30%;
+   left: 5%;
+}
+
+.content-home p {
+   font-size: 42px;
+   font-weight: 800;
+   color: #4c4c4c;
+   letter-spacing: 5px;
+}
+
+.content-home button {
+   padding: 0.9rem 1.5rem; /* Adjusted padding */
+   background-color: #fe9e0d;
+   outline: none;
+   border: none;
+   border-radius: 5rem;
+   font-size: 1.1rem;
+   cursor: pointer;
+   font-weight: 600;
+   color: #f6f6f6;
+   transition: background-color 0.2s;
+   display: inline-block; /* Ensures the button stays on one line */
+   width: auto; /* Allows button to adjust width based on content */
+}
+
+.content-home button:hover,
+.content-home button:focus {
+   background-color: #e48f0f;
+}
+
+
+.navbar-nav .nav-link {
+   position: relative;
+   color: #4c4c4c;
+   text-decoration: none;
+   margin-right: 40px;
+   padding: 10px 15px;
+   transition: color 0.3s;
+   font-size: 20px;
+}
+
+.navbar-nav .nav-link.active::before {
+   content: '';
+   position: absolute;
+   bottom: 0;
+   left: 50%; /* Adjust left position to center the pseudo-element */
+   transform: translateX(-50%); /* Center horizontally */
+   width: 8rem; /* Set the width to match the primary button */
+   height: 100%;
+   background-color: #fe9e0d; /* Set background color */
+   border-radius: 5rem; /* Match border-radius with primary-button */
+   z-index: -1;
+   transition: width 0.2s ease-in-out; /* Add transition effect */
+}
+
+.navbar-nav .nav-link.active {
+   font-weight: bold;
+   color: #f6f6f6; /* Make active link text bold */
+}
+
+.navbar-nav .nav-link.active:hover::before {
+   width: 100%; /* Ensure full width on hover */
+}
+
+
+@media (max-width: 768px) {
+   .navbar-nav .nav-link {
+      margin-right: 0;
+      margin-bottom: 10px;
+   }
+}
+
+.filter-container {
+   width: 100%;
+   height: 10vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 10px;
+}
+
+.filter-container select {
+   width: 60%;
+   border: 1px solid;
+   padding: 10px;
+   margin: 10px;
+   border-radius: 5px;
+}
+
+.animal-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   gap: 16px;
+}
+
+.card {
+   width: 18rem;
+   margin-left: 10px;
+}
+
+.section-button {
+   position: absolute;
+   bottom: 20px; /* Adjust as needed */
+   left: 50%;
+   transform: translateX(-50%);
+   padding: 10px 20px;
+   font-size: 1rem;
+   border-radius: 15px;
+   transition: background-color 0.3s ease;
+   z-index: 1;
+}
+
+
+@media (max-width: 768px) {
+   .first-container, .second-container, .filter-container {
+      min-height: 300px;
+   }
+
+   .section-button {
+      bottom: 10px;
+   }
+   .content-home {
+      top: 15%; 
+   }
+
+   .filter-container select {
+      width: 50%;
+   }
+
+   .animal-container {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+   }
+
+   .card {
+      width: 90%;
+   }
+}
+
+/* Additional styling for bold headings */
+h1, h2, h3, h4, h5, h6 {
+   font-weight: bold;
+}

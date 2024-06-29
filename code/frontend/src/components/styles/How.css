@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
+
+.how-section-container {
+    margin-top: 10rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 0;
+}
+
+.how-background-container {
+    position: absolute;
+    left: 0px; /* Adjust this value to move the background image to the right */
+    top: 0;
+    z-index: -2;
+}
+
+.how-section-image-container {
+    flex: 0.9;
+    margin-right: 1rem;
+    position: relative;
+    left: 60px; /* Adjust this value to move the image to the right */
+}
+
+.how-section-text-container {
+    flex: 1;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.primary-subheading {
+    font-weight: 700;
+    color: #fe9e0d;
+    font-size: 2rem;
+}
+
+.primary-heading {
+    font-family: 'Reem Kufi', sans-serif !important; /* Ensure the custom font is applied */
+    font-size: 4.5rem; /* Adjust font size as needed */
+    color: #4c4c4c; /* Change color if necessary */
+}
+
+.your-image-class {
+    max-width: 100%;
+    height: auto;
+    margin-left: -1rem; /* Adjust this value to move the image to the left */
+}
+
+.how-buttons-container {
+    text-decoration: none;
+    margin-top: 1.5rem; /* Add margin-top to move the button down */
+}
+
+.how-buttons-container button:hover,
+.how-buttons-container button:focus {
+    border-bottom: 1px solid #fe9e0d;
+}
+
+.primary-button {
+    padding: 0.9rem 1.75rem;
+    background-color: #fe9e0d; /* Set default background color */
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: #ffffff;
+    transition: background-color 0.2s; /* Add transition for background-color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8rem; /* Increase width of the button */
+}
+
+.primary-button:hover,
+.primary-button:focus {
+    background-color: #e48f0f; /* Adjust hover/focus background color if needed */
+}
+
+.primary-button .button-icon {
+    margin-left: 0.5rem; /* Adjust icon position as needed */
+}

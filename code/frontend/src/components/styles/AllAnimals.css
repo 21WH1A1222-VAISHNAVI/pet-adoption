@@ -1,0 +1,156 @@
+.dogs-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   width: 100vw;
+   margin-left: -5rem;
+   margin-right: 5rem;
+   background-color: #f0f0f0;
+   padding-bottom: 5rem;
+}
+
+.dogs-content {
+   text-align: center;
+   width: 100%;
+   max-width: 1200px;
+   padding: 1rem;
+}
+
+.dogs-title {
+   font-size: 4rem;
+   color: #4c4c4c;
+   margin-bottom: 1rem;
+   margin-top: 4rem;
+}
+
+.filter-container {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 2rem;
+}
+
+.filter-container p {
+   margin: 0 1rem;
+   font-size: 1.2rem;
+}
+
+.filter-container select {
+   width: 20%;
+   padding: 10px;
+   margin: 0 1rem;
+   border-radius: 5px;
+   border: 1px solid #ccc;
+   font-size: 1rem;
+}
+
+.dog-blocks {
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   gap: 2rem;
+}
+
+.dog-block {
+   width: 30%;
+   background-color: #fff;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   border-radius: 8px;
+   overflow: hidden;
+   position: relative;
+}
+
+.dog-image {
+   width: 100%;
+   height: 250px;
+   object-fit: cover;
+}
+
+.dog-image-container {
+   position: relative;
+}
+
+.heart-icon-wrapper {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   background-color: rgba(255, 255, 255, 0.9);
+   border-radius: 50%;
+   padding: 0.5rem;
+   transition: background-color 0.3s ease;
+}
+
+.heart-icon-wrapper:hover {
+   background-color: rgba(255, 255, 255, 1);
+}
+
+.dog-text-container {
+   padding: 1rem;
+   text-align: center; /* Center align the text */
+}
+
+.dog-text-title {
+   font-size: 1.8rem;
+   color: #fe9e0d;
+   margin-top: -0.5rem;
+   margin-bottom: 0.25rem;
+}
+
+.dog-details {
+   display: flex;
+   flex-direction: column;
+   align-items: center; /* Center align the details */
+}
+
+.dog-icon-container {
+   display: flex;
+   align-items: center;
+   justify-content: center; /* Center align the icon container */
+   margin-bottom: 0.2rem; /* Reduce margin to move closer to pet type */
+}
+
+.dog-icon {
+   margin-right: 0.4rem;
+}
+
+.dog-species {
+   font-size: 1rem;
+   color: #4c4c4c;
+   font-weight: bold;
+   margin-bottom: 0.2rem; /* Reduce margin to move closer to age */
+}
+
+.dog-text-location {
+   font-size: 1rem;
+   color: #4c4c4c;
+   margin-bottom: 0.5rem;
+   margin-top: -0.45rem; /* Remove top margin */
+}
+
+.adopt-button {
+   display: flex;
+   justify-content: center; /* Center align the button */
+}
+
+.custom-adopt-button {
+   background-color: #fe9e0d; /* Change the background color */
+   border-color: #fe9e0d; /* Change the border color */
+   color: #fff; /* Change the text color */
+}
+
+.custom-adopt-button:hover {
+   background-color: #ff7f00; /* Change the background color on hover */
+   border-color: #ff7f00; /* Change the border color on hover */
+}
+
+@media (max-width: 768px) {
+   .dog-block {
+      width: 100%;
+   }
+
+   .filter-container select {
+      width: 40%;
+   }
+}

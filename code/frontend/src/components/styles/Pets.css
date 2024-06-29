@@ -1,0 +1,80 @@
+.pets-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0rem;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.pets-section-top {
+  margin-bottom: 1rem;
+}
+
+.pets-section-bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.pets-section-info {
+  width: 30%;
+  min-height: 350px;
+  height: 100%;
+  background-color: white;
+  padding: 0rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 1rem;
+  color: #505050;
+  margin-bottom: 2rem;
+  text-decoration: none;
+}
+
+.Pets-heading {
+  color: #4c4c4c; /* Change the color of the heading */
+  font-size: 4.5rem; /* Example: increase font size */
+}
+
+.pets-section-info h2 {
+  margin: 0.5rem 0 0.5rem 0;
+  font-size: 1.5rem;
+  color: #fe9e0d; /* Keep the original color for other headings */
+}
+
+.pets-section-info p {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #4c4c4c;
+  margin-top: 0;
+}
+
+.pets-section-info:hover h2,
+.pets-section-info:hover p {
+  text-decoration: underline;
+}
+
+.info-boxes-img-container {
+  margin-bottom: 0.5rem;
+}
+
+.info-boxes-img-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.pets-section-info a {
+  text-decoration: none;
+}
+
+.pets-section-info a:hover {
+  text-decoration: underline;
+}
